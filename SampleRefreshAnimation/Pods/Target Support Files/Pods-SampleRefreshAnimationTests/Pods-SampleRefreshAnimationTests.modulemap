@@ -1,0 +1,6 @@
+framework module Pods_SampleRefreshAnimationTests {
+  umbrella header "Pods-SampleRefreshAnimationTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

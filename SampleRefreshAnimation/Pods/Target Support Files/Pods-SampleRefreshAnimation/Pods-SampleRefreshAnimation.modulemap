@@ -1,0 +1,6 @@
+framework module Pods_SampleRefreshAnimation {
+  umbrella header "Pods-SampleRefreshAnimation-umbrella.h"
+
+  export *
+  module * { export * }
+}

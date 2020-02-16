@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SampleRefreshAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="MMK-0A-a1O">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.90173027109790327" green="0.99413719309463011" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.99340527899999997" green="0.93043733949999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.99340527895964903" green="0.93043733949077267" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TEST" rowHeight="214" id="Sp8-4s-rVO" customClass="tableViewCell" customModule="SampleRefreshAnimation" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="55.5" width="290" height="214"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sp8-4s-rVO" id="DOo-mC-jP9">
+                                            <rect key="frame" x="0.0" y="0.0" width="290" height="214"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfO-UO-qr0">
+                                                    <rect key="frame" x="15" y="158" width="260" height="27"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="てすと">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.3709655406299629" green="0.22875908853741883" blue="0.25181038859746696" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="15" name="HiraMaruProN-W4"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Do-Un-8ef">
+                                                    <rect key="frame" x="259" y="186" width="31" height="28"/>
+                                                    <state key="normal" image="ellipsis" catalog="system"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9WD-bN-Q4J">
+                                                    <rect key="frame" x="0.0" y="186" width="117" height="28"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="　kawaii musume@2/10">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.29995142487046633" green="0.29995142487046633" blue="0.29995142487046633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="10" name="HiraMaruProN-W4"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Apb-b0-dlA">
+                                                    <rect key="frame" x="0.0" y="0.0" width="290" height="150"/>
+                                                    <color key="backgroundColor" red="0.76087362321917473" green="0.98821913215145585" blue="0.96909033374892228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="150" id="iwP-tD-b5i"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.97009671366247341" green="0.87406196232662015" blue="0.98821913215145585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="dfO-UO-qr0" firstAttribute="top" secondItem="Apb-b0-dlA" secondAttribute="bottom" constant="8" id="8XP-zD-cp9"/>
+                                                <constraint firstItem="9WD-bN-Q4J" firstAttribute="top" secondItem="DOo-mC-jP9" secondAttribute="top" constant="186" id="EFy-Q3-k8R"/>
+                                                <constraint firstItem="Apb-b0-dlA" firstAttribute="leading" secondItem="DOo-mC-jP9" secondAttribute="leading" id="EVD-sG-jpx"/>
+                                                <constraint firstItem="9WD-bN-Q4J" firstAttribute="leading" secondItem="DOo-mC-jP9" secondAttribute="leadingMargin" constant="-15" id="FCQ-gd-TyV"/>
+                                                <constraint firstAttribute="trailing" secondItem="9Do-Un-8ef" secondAttribute="trailing" id="JVz-7M-ik9"/>
+                                                <constraint firstAttribute="trailing" secondItem="Apb-b0-dlA" secondAttribute="trailing" id="MRl-DO-olY"/>
+                                                <constraint firstAttribute="trailing" secondItem="9Do-Un-8ef" secondAttribute="trailing" id="NYO-IS-Sra"/>
+                                                <constraint firstAttribute="trailing" secondItem="9Do-Un-8ef" secondAttribute="trailing" id="ONP-Gp-fVl"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="dfO-UO-qr0" secondAttribute="bottom" constant="18" id="U41-QB-PJz"/>
+                                                <constraint firstAttribute="bottom" secondItem="Apb-b0-dlA" secondAttribute="bottom" constant="64" id="Vhf-Yg-RMs"/>
+                                                <constraint firstItem="9Do-Un-8ef" firstAttribute="top" secondItem="DOo-mC-jP9" secondAttribute="top" constant="186" id="afj-Kf-1IY"/>
+                                                <constraint firstItem="dfO-UO-qr0" firstAttribute="trailing" secondItem="DOo-mC-jP9" secondAttribute="trailingMargin" id="bvx-zv-Kug"/>
+                                                <constraint firstItem="dfO-UO-qr0" firstAttribute="leading" secondItem="DOo-mC-jP9" secondAttribute="leadingMargin" id="fBy-rL-2D1"/>
+                                                <constraint firstItem="dfO-UO-qr0" firstAttribute="trailing" secondItem="DOo-mC-jP9" secondAttribute="trailingMargin" id="ij7-qP-yPI"/>
+                                                <constraint firstItem="9Do-Un-8ef" firstAttribute="leading" secondItem="9WD-bN-Q4J" secondAttribute="trailing" constant="142" id="mVI-k7-tRa"/>
+                                                <constraint firstItem="dfO-UO-qr0" firstAttribute="leading" secondItem="DOo-mC-jP9" secondAttribute="leadingMargin" id="p3h-bi-yhI"/>
+                                                <constraint firstAttribute="bottom" secondItem="9Do-Un-8ef" secondAttribute="bottom" id="pK3-rT-ABx"/>
+                                                <constraint firstItem="Apb-b0-dlA" firstAttribute="top" secondItem="DOo-mC-jP9" secondAttribute="top" id="qwj-lJ-YNM"/>
+                                                <constraint firstAttribute="bottom" secondItem="9WD-bN-Q4J" secondAttribute="bottom" id="vJE-V7-6Sp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="myImageView" destination="Apb-b0-dlA" id="yTG-Gu-pIi"/>
+                                            <outlet property="myTextLabel" destination="dfO-UO-qr0" id="Zk0-9k-fFK"/>
+                                            <outlet property="syosaiButton" destination="9Do-Un-8ef" id="UEB-nw-1oV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99340527899999997" green="0.93043733949999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MMK-0A-a1O" secondAttribute="bottom" id="TWI-eo-eYe"/>
+                            <constraint firstItem="MMK-0A-a1O" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oBP-Tb-ArZ"/>
+                            <constraint firstItem="MMK-0A-a1O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zAj-SR-D3j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MMK-0A-a1O" secondAttribute="trailing" id="zfW-f2-f1A"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="myTableView" destination="MMK-0A-a1O" id="YI0-9Q-vdf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.75" y="138.38028169014083"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ellipsis" catalog="system" width="64" height="18"/>
+    </resources>
+</document>
